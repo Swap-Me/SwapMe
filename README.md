@@ -1,2 +1,9 @@
 # SwapMe
-Mobile application for engaging one-to-one trading for items that the user no longer needs.
+Mobile application that mimics the Drop or Swap transaction using matching.
+
+## Developers
+Once you clone the repository, run
+
+`npm i`
+
+this will install all dependencies
