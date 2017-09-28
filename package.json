@@ -18,6 +18,17 @@
 		"babel-traverse": "6.4.5",
 		"babel-types": "6.4.5",
 		"babylon": "6.4.5",
-		"lazy": "1.0.11"
-	}
+		"eslint": "^4.7.2",
+		"husky": "^0.14.3",
+		"lazy": "1.0.11",
+		"lint-staged": "^4.2.3",
+		"stylelint": "^8.1.1"
+	},
+	"scripts": {
+		"precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.css": "stylelint"
+  }
 }
