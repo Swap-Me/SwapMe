@@ -1,8 +1,20 @@
+var frameModule = require("ui/frame");
+var imageModule = require("ui/image");
+
 /*
 In NativeScript, a file with the same name as an XML file is known as
 a code-behind file. The code-behind is a great place to place your view
 logic, and to set up your page’s data binding.
 */
+
+function pageLoaded(args) {
+	var image1 = "https://raw.githubusercontent.com/NativeScript/sample-PhotoAlbum/master/app/res/05.jpg";
+	var image2 = "https://raw.githubusercontent.com/NativeScript/sample-PhotoAlbum/master/app/res/06.jpg";
+	var image3 = "https://raw.githubusercontent.com/NativeScript/sample-PhotoAlbum/master/app/res/07.jpg";
+    var image4 = "https://raw.githubusercontent.com/NativeScript/sample-PhotoAlbum/master/app/res/08.jpg";
+	var myImages = [image1, image2, image3, image4];
+}
+exports.pageLoaded = pageLoaded;
 
 /*
 NativeScript adheres to the CommonJS specification for dealing with
@@ -39,3 +51,11 @@ function here makes the navigatingTo="onNavigatingTo" binding in this page’s X
 file work.
 */
 exports.onNavigatingTo = onNavigatingTo;
+
+exports.carousel = function(args){
+	var topmost = frameModule.topmost();
+    var navigationEntry = {
+        moduleName: "carousel"
+    };
+    topmost.navigate(navigationEntry);
+};

@@ -11,16 +11,25 @@ refer to http://docs.nativescript.org/ui/theme.
 The imported CSS rules must precede all other types of rules.
 */
 @import 'nativescript-theme-core/css/core.light.css';
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 /*
 The following CSS rule changes the font size of all UI
 components that have the btn class name.
 */
 .btn {
-    font-size: 18;
+    font-size: 16px;
+}
+
+.carouselLabel {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    color: #545454;
+    z-index: 3;
 }
 
 .labelone {
+    font-size: 30px;    
     margin-top: 50px;
     display: block;
     /* width: 300px; */
@@ -28,21 +37,23 @@ components that have the btn class name.
 
 .facebookBtn {
     border: none;
-    width: 450px;
+    width: 400px;
     border-radius: 30px;
     box-shadow: none;
     color: #fff;
     cursor: pointer;
+    background-color: #4267B2;
     padding: 16px 24px;
     text-align: center;
 }
 
 .phoneNumberBtn {
     border: none;
-    width: 450px;
+    width: 400px;
     border-radius: 30px;
     box-shadow: none;
     color: #fff;
+    background-color: #3e9b00;    
     cursor: pointer;
     padding: 16px 24px;
     text-align: center;   

@@ -26,22 +26,36 @@ https://docs.nativescript.org/ui/components.
     -->
     <StackLayout class="p-20">
         <Label text="Discover new and exciting stuff around you today" textWrap='true' class="h1 text-center labelone"/>
-        <ns:Carousel height="250" pageChanged="myChangeEvent">
-    <ns:CarouselItem id="slide1"  verticalAlignment="center" backgroundColor="white">
-        <Label text="" verticalAlignment="center" horizontalAlignment="center"/>
-        <Image src="http://www.computertek.com/shopping/tagsale/images/cards_bbcards_torre_joe_topps350_Vertical.jpg" height="600" width= "400"/>
 
-    </ns:CarouselItem>
-    <ns:CarouselItem id="slide2" verticalAlignment="center" backgroundColor="white">
-        <Label text="" verticalAlignment="center" horizontalAlignment="center"/>
-        <Image src="http://www.computertek.com/shopping/tagsale/images/cards_bbcards_torre_joe_topps350_Vertical.jpg" height="600"  width= "400"/>
-    </ns:CarouselItem> 
-    <ns:CarouselItem id="slide3" verticalAlignment="center" backgroundColor="white">
-        <Label text=""  verticalAlignment="center" horizontalAlignment="center"/>
-         <Image src="http://www.computertek.com/shopping/tagsale/images/cards_bbcards_torre_joe_topps350_Vertical.jpg" height="600" width= "400"/>
-    </ns:CarouselItem>
-</ns:Carousel>
-        <Button text="LOG IN WITH FACEBOOK" tap="{{ onTap }}" class="btn btn-primary btn-active facebookBtn"/>
+        <GridLayout height="250">
+            <ns:Carousel id="myCarousel" height="250" color="white" pageChanged="myChangeEvent" pageTapped="mySelectedEvent" 
+            items="{{ myDataArray }}" indicatorColor="#fff" indicatorColorUnselected="#50ffffff"
+            ios:autoPagingInterval="3" android:indicatorAnimation="scale">
+                <ns:Carousel.itemTemplate>
+                    <ns:CarouselItem  verticalAlignment="center" backgroundColor="{{ color }}">
+                         <GridLayout rows="*" columns="*">
+                            <Image src="{{ image }}" stretch="aspectFill" />
+                            <Label text="{{ title }}" horizontalAlignment="center" verticalAlignment="center" backgroundColor="#90000000" />
+                        </GridLayout>
+                    </ns:CarouselItem>
+                </ns:Carousel.itemTemplate>
+            </ns:Carousel>    
+        </GridLayout>
+        <!-- <ns:Carousel height="250" pageChanged="myChangeEvent" showIndicator=>
+                <ns:CarouselItem id="slide1"  verticalAlignment="center" backgroundColor="white">
+                    <Label text="" verticalAlignment="center" horizontalAlignment="center"/>
+                    <Image src="http://www.computertek.com/shopping/tagsale/images/cards_bbcards_torre_joe_topps350_Vertical.jpg" height="600" width= "400"/>   
+                </ns:CarouselItem>
+                <ns:CarouselItem id="slide2" verticalAlignment="center" backgroundColor="white">
+                    <Label text="" verticalAlignment="center" horizontalAlignment="center"/>
+                    <Image src="http://www.computertek.com/shopping/tagsale/images/cards_bbcards_torre_joe_topps350_Vertical.jpg" height="600"  width= "400"/>
+                </ns:CarouselItem> 
+                <ns:CarouselItem id="slide3" verticalAlignment="center" backgroundColor="white">
+                    <Label text=""  verticalAlignment="center" horizontalAlignment="center"/>
+                    <Image src="http://www.computertek.com/shopping/tagsale/images/cards_bbcards_torre_joe_topps350_Vertical.jpg" height="600" width= "400"/>
+                </ns:CarouselItem>
+        </ns:Carousel> -->
+        <Button text="LOG IN WITH FACEBOOK" tap="carousel" class="btn btn-primary btn-active facebookBtn"/>
         <Button text="LOG IN WITH PHONE NUMBER" tap="{{ onTap }}" class="btn btn-primary btn-active phoneNumberBtn"/>
         <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
     </StackLayout>
