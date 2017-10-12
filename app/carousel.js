@@ -7,7 +7,7 @@ var observableModule = require('data/observable'),
 	    {title:'Find cool and interesting items nearby', color: '#ffffff', image:'https://s3.amazonaws.com/swapmeimg/c1.png', height:'400px'},
 	    {title:'Swipe Right to like something or Swipe Left to pass', color: '#ffffff', image:'https://s3.amazonaws.com/swapmeimg/c2.png'},
 	    {title:'If they also Swipe Right, it\'s a Match!', color: '#ffffff', image:'https://s3.amazonaws.com/swapmeimg/c4.png'},
-	    {title:'Setup a time and place to Drop or Swap!', color: '#ffffff', image:'https://s3.amazonaws.com/swapmeimg/c5.png'}
+	    {title:'Chat with people you\'ve matched with to meet up', color: '#ffffff', image:'https://s3.amazonaws.com/swapmeimg/c6.png'}
     ];
 
 pageData.set('myDataArray', myDataArray);
