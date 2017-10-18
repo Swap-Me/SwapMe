@@ -55,7 +55,7 @@ https://docs.nativescript.org/ui/components.
                     <Image src="http://www.computertek.com/shopping/tagsale/images/cards_bbcards_torre_joe_topps350_Vertical.jpg" height="600" width= "400"/>
                 </ns:CarouselItem>
         </ns:Carousel> -->
-        <Button text="LOG IN WITH FACEBOOK" tap="carousel" class="btn btn-primary btn-active facebookBtn"/>
+        <Button text="LOG IN WITH FACEBOOK" tap="login" class="btn btn-primary btn-active facebookBtn"/>
         <Button text="LOG IN WITH PHONE NUMBER" tap="{{ onTap }}" class="btn btn-primary btn-active phoneNumberBtn"/>
         <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
     </StackLayout>

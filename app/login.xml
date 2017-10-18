@@ -28,7 +28,7 @@
                 </ns:Carousel.itemTemplate>
             </ns:Carousel>    
         </GridLayout>
-        <Button text="LOG IN WITH FACEBOOK" tap="toggleIndicator" class="btn btn-primary btn-active facebookBtn"/>
+        <Button text="LOG IN WITH FACEBOOK" tap="thirdAuth" class="btn btn-primary btn-active facebookBtn"/>
         <Button text="LOG IN WITH PHONE NUMBER" tap="toggleColor" class="btn btn-primary btn-active phoneNumberBtn"/>
 
         <!-- <Button text="Toggle indicator" tap="toggleIndicator" margin="10,10,0,10" android:visibility="collapsed"/>

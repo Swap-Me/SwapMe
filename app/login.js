@@ -1,7 +1,5 @@
 var observableModule = require('data/observable'),
-    // colorModule = require('color'),
-    // color = colorModule.Color,
-    // myCarousel = null,
+    // tnsOAuthModule = require('nativescript-oauth'),
     pageData = new observableModule.Observable(),
     myDataArray = [
 	    {title:'Find cool and interesting items nearby', color: '#ffffff', image:'https://s3.amazonaws.com/swapmeimg/c1.png', height:'400px'},
@@ -16,6 +14,24 @@ exports.pageLoaded = function(args) {
   var page = args.object;
   page.bindingContext = pageData;
   myCarousel = page.getViewById('myCarousel');
+};
+
+exports.thirdAuth = function(args) {
+  var topmost = frameModule.topmost(),
+      navigationEntry = {
+        moduleName: 'thirdAuth'
+      };
+
+  topmost.navigate(navigationEntry);
+};
+
+exports.inAuth = function(args) {
+  var topmost = frameModule.topmost(),
+      navigationEntry = {
+        moduleName: 'facebookAuth'
+      };
+
+  topmost.navigate(navigationEntry);
 };
 
 // exports.myChangeEvent = function(args){
