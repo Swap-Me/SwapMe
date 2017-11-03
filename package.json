@@ -1,36 +1,49 @@
 {
-	"description": "NativeScript Application",
-	"license": "SEE LICENSE IN <your-license-filename>",
-	"readme": "NativeScript Application",
-	"repository": "<fill-your-repository-here>",
-	"nativescript": {
-		"id": "org.nativescript.hello",
-		"tns-android": {
-			"version": "3.2.0"
-		}
-	},
-	"dependencies": {
-		"nativescript-carousel": "^3.1.0",
-		"nativescript-social-login": "^1.7.2",
-		"nativescript-theme-core": "~1.0.2",
-		"tns": "^0.1.0",
-		"tns-core-modules": "^3.2.0"
-	},
-	"devDependencies": {
-		"babel-traverse": "6.4.5",
-		"babel-types": "6.4.5",
-		"babylon": "6.4.5",
-		"eslint": "^4.7.2",
-		"husky": "^0.14.3",
-		"lazy": "1.0.11",
-		"lint-staged": "^4.2.3",
-		"stylelint": "^8.1.1"
-	},
-	"scripts": {
-		"precommit": "lint-staged"
-	},
-	"lint-staged": {
-		"*.js": "eslint",
-		"*.css": "stylelint"
-	}
+  "name": "SwapMe",
+  "version": "0.0.1",
+  "description": "A NativeScript-built iOS and Android app for trading items",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "readme": "NativeScript Application",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Swap-Me/SwapMe/.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Swap-Me/SwapMe/issues"
+  },
+  "homepage": "https://github.com/Swap-Me/SwapMe",
+  "nativescript": {
+    "id": "org.nativescript.swapme",
+    "tns-android": {
+      "version": "3.2.0"
+    },
+    "tns-ios": {
+      "version": "3.2.0"
+    }
+  },
+  "dependencies": {
+    "nativescript-angular": "~3.0.0",
+    "nativescript-carousel": "^3.1.0",
+    "nativescript-oauth": "^2.0.1",
+    "nativescript-theme-core": "~1.0.2",
+    "tns": "^0.1.0",
+    "tns-core-modules": "~3.2.0"
+  },
+  "devDependencies": {
+    "babel-traverse": "6.4.5",
+    "babel-types": "6.4.5",
+    "babylon": "6.4.5",
+    "eslint": "^4.7.2",
+    "husky": "^0.14.3",
+    "lazy": "1.0.11",
+    "lint-staged": "^4.2.3",
+    "stylelint": "^8.1.1"
+  },
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.css": "stylelint"
+  }
 }

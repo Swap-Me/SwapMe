@@ -4,7 +4,7 @@
     "curly": 2,
     "semi": 2,
     "strict": [2, "never"],
-    "quotes": [2, "single"],
+    "quotes": [1, "single"],
     "no-trailing-spaces": ["error", {
       "skipBlankLines": false
     }],
@@ -21,7 +21,7 @@
     }],
     "handle-callback-err": 0,
     "no-use-before-define": [2, "nofunc"],
-    "no-unused-vars": [2, {
+    "no-unused-vars": [1, {
       "vars": "all",
       "args": "none"
     }],

@@ -1,0 +1,75 @@
+{
+  "name": "SwapMe",
+  "version": "0.0.1",
+  "description": "A NativeScript-built iOS and Android app for trading items",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "readme": "NativeScript Application",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Swap-Me/SwapMe/.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Swap-Me/SwapMe/issues"
+  },
+  "homepage": "https://github.com/Swap-Me/SwapMe",
+  "nativescript": {
+    "id": "org.nativescript.swapme",
+    "tns-android": {
+      "version": "3.2.0"
+    },
+    "tns-ios": {
+      "version": "3.2.0"
+    }
+  },
+  "dependencies": {
+    "@angular/animations": "~4.1.0",
+    "@angular/common": "~4.1.0",
+    "@angular/compiler": "~4.1.0",
+    "@angular/core": "~4.1.0",
+    "@angular/forms": "~4.1.0",
+    "@angular/http": "~4.1.0",
+    "@angular/platform-browser": "~4.1.0",
+    "@angular/router": "~4.1.0",
+    "nativescript-angular": "~3.0.0",
+    "nativescript-theme-core": "~1.0.2",
+    "nativescript-carousel": "^3.1.0",
+    "nativescript-oauth": "^2.0.1",
+    "tns": "^0.1.0",
+    "tns-core-modules": "~3.2.0"
+  },
+  "devDependencies": {
+    "@angular/compiler-cli": "~4.1.0",
+    "@ngtools/webpack": "~1.4.0",
+    "babel-traverse": "6.4.5",
+    "babel-types": "6.4.5",
+    "babylon": "6.4.5",
+    "copy-webpack-plugin": "~4.0.1",
+    "eslint": "^4.7.2",
+    "extract-text-webpack-plugin": "~2.1.0",
+    "husky": "^0.14.3",
+    "lazy": "1.0.11",
+    "lint-staged": "^4.2.3",
+    "nativescript-css-loader": "~0.26.0",
+    "nativescript-dev-typescript": "~0.4.0",
+    "nativescript-dev-webpack": "^0.6.3",
+    "raw-loader": "~0.5.1",
+    "resolve-url-loader": "~2.0.2",
+    "stylelint": "^8.1.1",
+    "typescript": "^2.5.3",
+    "webpack": "^3.8.1",
+    "webpack-sources": "^1.0.1"
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "ns-bundle": "ns-bundle",
+    "publish-ios-bundle": "npm run ns-bundle --ios --publish-app",
+    "start-android-bundle": "npm run ns-bundle --android --run-app",
+    "start-ios-bundle": "npm run ns-bundle --ios --run-app",
+    "build-android-bundle": "npm run ns-bundle --android --build-app",
+    "build-ios-bundle": "npm run ns-bundle --ios --build-app"
+  },
+  "lint-staged": {
+    "*.js": "eslint",
+    "*.css": "stylelint"
+  }
+}

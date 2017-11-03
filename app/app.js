@@ -12,10 +12,7 @@ var application = require('application'),
       clientSecret: 'e627593087ee344069318adc860b56ab',
       scope: ['email'] //whatever other scopes you need
     };
-
-tnsOAuthModule.initFacebook(facebookInitOptions);
-
-application.start({ moduleName: 'login' });
+application.start({ moduleName: "index" });
 
 /*
 Do not place any code after the application has been started as it will not
