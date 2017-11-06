@@ -1,8 +1,0 @@
-{
-  "rules": {
-    "selector-list-comma-newline-after": null,
-    "number-no-trailing-zeros": null,
-    "unit-whitelist": ["px", "%", "vh", "s", "em", "deg"],
-    "indentation": 2
-  }
-}
