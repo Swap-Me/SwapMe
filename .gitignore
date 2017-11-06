@@ -4,6 +4,7 @@ node_modules
 
 platforms
 
-cards/app
-
-SwapMe/app
+cards/node_modules
+cards/platforms
+SwapMe/node_modules
+SwapMe/platforms
