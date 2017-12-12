@@ -26,7 +26,7 @@
                     <Button id="saveDesc" text="Save description" tap="{{ saveDescription }}" class="info-link-button3" />
                     <Button ios:text="Documentation" android:text="Add Item" class="info-link-button" tag="{{ url }}" tap="addItem" />
                     <Button text="Gallery" tap="gallery" class="info-link-button2" />
-                    <Button text="Log Out" tap="tapLogout" class="info-link-button" />
+                    <Button text="Log Out" tap="tapLogout" class="info-link-button4" />
                 </StackLayout>
 			</StackLayout>
 

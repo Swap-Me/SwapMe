@@ -12,8 +12,8 @@
     <StackLayout>
 
         <!-- Card Layout -->
-        <StackLayout id="card" class="card" height="800px" width="1000px">
-            <Image class ="swap-item"  id="item" height="644px" width="920px" src=""></Image>
+        <StackLayout id="card" class="card" height="1000px" width="1000px">
+            <Image class ="swap-item"  id="item" height="600px" width="920px" src=""></Image>
             <Label class = "text_design" id="name"></Label>
             <TextView editable="false" class = "text_design" id="desc" height="355px"></TextView>
         </StackLayout>

@@ -9,11 +9,13 @@
   
    
     <StackLayout>
-        <TextField id="firstname" hint="First Name" text="{{ firstname }}" />
-        <TextField id="lastname" hint="Last Name" text="{{ lastname }}" />
+        <TextField hint="First Name" text="{{ firstname }}" />
+        <TextField hint="Last Name" text="{{ lastname }}" />
+        <TextField hint="Age"/>
+        <TextField hint="Distance Preference" text="{{ lastname }}" />
+        <TextField hint="Gender" text="{{ firstname }}" />
         <StackLayout orientation="horizontal">
-            <Button text="Insert" tap="{{ insert }}" />
-            <Button text="Select" tap="{{ select }}" />
+            <Button class="info-link-button5" text="Make Change" tap="backButtonClicked"  />
         </StackLayout>
     </StackLayout>
 </Page>

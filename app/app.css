@@ -134,7 +134,7 @@ swipeLabel{
 }
 
 .info-link-button {
-  margin-top: 0;      
+  margin-top: -30;      
   margin-left : 70;
   width: 180;
   height: 50;
@@ -156,7 +156,7 @@ swipeLabel{
 
 .info-link-button2{
   margin-left : 70;      
-  margin-top: 0;      
+  margin-top: -30;      
   width: 180;
   height: 50;
   border-radius: 30px;
@@ -169,7 +169,7 @@ swipeLabel{
 
 .info-link-button3{
   margin-left: 70;
-  margin-top: 0;      
+  margin-top: 30;      
   width: 180;
   height: 50;
   border-radius: 30px;
@@ -178,4 +178,33 @@ swipeLabel{
   cursor: pointer;
   background-color: rgb(186, 100, 121);
   text-align: center;
+}
+
+.info-link-button4{
+  margin-left: 70;
+  margin-top: -30;      
+  width: 180;
+  height: 50;
+  border-radius: 30px;
+  box-shadow: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgb(236, 52, 113);
+  text-align: center;
+}
+
+.info-link-button5{
+
+  margin-left: 120;
+  margin-top: 50;      
+  width: 180;
+  height: 50;
+  border-radius: 30px;
+  box-shadow: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: rgb(236, 52, 113);
+  text-align: center;
+
+
 }
