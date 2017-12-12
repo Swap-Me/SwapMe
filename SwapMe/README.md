@@ -1,4 +1,4 @@
-SwapMe
+#SwapMe
 
 SwapMe is a product finder app that will help individuals to trade their items with one another.
 
