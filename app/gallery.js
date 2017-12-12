@@ -26,6 +26,7 @@ function backButtonClicked(args){
     goBack();
 }
 
+//function to navigate back in the app
 function goBack(){
     if (frameModule.topmost().canGoBack) {
         frameModule.topmost().goBack();
@@ -35,6 +36,7 @@ function goBack(){
 }
 exports.backButtonClicked = backButtonClicked;
 
+//function to select images single and mutiple both
 exports.pageLoaded = pageLoaded;
 function onSelectMultipleTap(args) {
     var context = imagepicker.create({ mode: "multiple" });
@@ -46,6 +48,7 @@ function onSelectSingleTap(args) {
     startSelection(context, true);
 }
 
+//function to save item to database
 exports.saveItem = function(args) {
     var page = args.object;
     sampleName = "Sample Item";
