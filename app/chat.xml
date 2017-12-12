@@ -1,0 +1,15 @@
+<!-- xml for chat -->
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+      xmlns:chatView="nativescript-chatview"
+      navigatingTo="onNavigatingTo">
+
+    <!-- added -->
+    <Page.actionBar>
+        <ActionBar title="Message">
+            <NavigationButton android.systemIcon="ic_menu_back" text="Back to ActionBar" tap="chat"></NavigationButton>
+        </ActionBar>
+    </Page.actionBar>
+
+</Page>
+

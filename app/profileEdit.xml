@@ -1,0 +1,19 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+   
+   
+    <Page.actionBar>
+        <ActionBar title="Cancel Edit">
+            <NavigationButton android.systemIcon="ic_menu_back" text="Back to ActionBar" tap="backButtonClicked"></NavigationButton>
+        </ActionBar>
+    </Page.actionBar>
+  
+   
+    <StackLayout>
+        <TextField id="firstname" hint="First Name" text="{{ firstname }}" />
+        <TextField id="lastname" hint="Last Name" text="{{ lastname }}" />
+        <StackLayout orientation="horizontal">
+            <Button text="Insert" tap="{{ insert }}" />
+            <Button text="Select" tap="{{ select }}" />
+        </StackLayout>
+    </StackLayout>
+</Page>

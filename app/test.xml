@@ -1,0 +1,29 @@
+<!-- 
+    Test.xml
+    Testing page for card like/dislike functionality
+-->
+<Page xmlns="http://www.nativescript.org/tns.xsd" class="page" loaded="loaded">
+    <!-- ActionBar -->
+    <Page.actionBar>		
+        <ActionBar title="Matching" id="verdict"></ActionBar>
+    </Page.actionBar>		
+
+    <!-- fixed swiping-->
+    <StackLayout>
+
+        <!-- Card Layout -->
+        <StackLayout id="card" class="card" height="800px" width="1000px">
+            <Image class ="swap-item"  id="item" height="644px" width="920px" src=""></Image>
+            <Label class = "text_design" id="name"></Label>
+            <TextView editable="false" class = "text_design" id="desc" height="355px"></TextView>
+        </StackLayout>
+         <!-- Profile & Chat Buttons -->
+
+        <StackLayout orientation="horizontal" height="300px">
+            <Button class = "btn btn-primary btn-active but_prof" text="profile" tap="profilePage" />
+            <Button class = "btn btn-active but_chat" text="Chat" tap="chatPage" />
+        </StackLayout>
+        
+     </StackLayout>
+
+</Page>

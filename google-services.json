@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "676017824611",
+    "firebase_url": "https://swapme-1491e.firebaseio.com",
+    "project_id": "swapme-1491e",
+    "storage_bucket": "swapme-1491e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:676017824611:android:51bce64f7b394951",
+        "android_client_info": {
+          "package_name": "org.nativescript.hello"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "676017824611-g4r9l7fj1ostk15vc59kmm9ipigvp489.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKehNbRYJ26z9k4EW9tt2dj1zVnBlK9ws"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

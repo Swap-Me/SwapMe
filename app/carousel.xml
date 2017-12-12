@@ -1,0 +1,27 @@
+// Carousel is a component for cycling through elements, like a carousel (slideshow).
+
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" actionBarHidden="true" xmlns:ns="nativescript-carousel">
+<Page.actionBar>
+    <ActionBar title="Features"></ActionBar>
+</Page.actionBar>
+
+<ScrollView>
+    <StackLayout>
+        <GridLayout columns="*" rows="auto, *">
+            <ns:Carousel id="myCarousel" height="425" color="white" pageChanged="myChangeEvent" pageTapped="mySelectedEvent" 
+            items="{{ myDataArray }}" indicatorColor="#00B8EB" indicatorColorUnselected="#a3a3a3" indicatorOffset="0,25"
+            ios:autoPagingInterval="3" android:indicatorAnimation="scale">
+                <ns:Carousel.itemTemplate>
+                    <ns:CarouselItem  verticalAlignment="center" backgroundColor="{{ color }}">
+                         <GridLayout rows="*" columns="*">
+                            <Image src="{{ image }}" horizontalAlignment="center" verticalAlignment="center" stretch="none" />
+                        </GridLayout>
+                    </ns:CarouselItem>
+                </ns:Carousel.itemTemplate>
+            </ns:Carousel>    
+        </GridLayout>
+        <Button text="LOG IN WITH FACEBOOK" tap="toggleIndicator" class="btn btn-primary btn-active facebookBtn"/>
+        <Button text="LOG IN WITH PHONE NUMBER" tap="toggleColor" class="btn btn-primary btn-active phoneNumberBtn"/>
+    </StackLayout>    
+</ScrollView>
+</Page>

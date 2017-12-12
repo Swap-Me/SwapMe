@@ -1,0 +1,32 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="pageLoaded" actionBarHidden="true" xmlns:ns="nativescript-carousel">
+    <Page.actionBar>
+        <ActionBar title="Features"></ActionBar>
+    </Page.actionBar>
+
+
+    <ScrollView>
+        <StackLayout>
+            <GridLayout columns="*" rows="auto, *">
+                <ns:Carousel  width="600px" height="950" color="white" pageChanged="myChangeEvent" pageTapped="mySelectedEvent"
+                    items="{{ myDataArray }}" indicatorColor="#00B8EB" indicatorColorUnselected="#a3a3a3" indicatorOffset="0,25"
+                    ios:autoPagingInterval="3" android:indicatorAnimation="scale">
+                    <ns:Carousel.itemTemplate>
+                        <ns:CarouselItem  verticalAlignment="center" backgroundColor="{{ color }}">
+                            <GridLayout rows="*" columns="*">
+                                <Image src="{{ image }}" horizontalAlignment="center"  verticalAlignment="center" stretch="none" />
+                            </GridLayout>
+                        </ns:CarouselItem>
+                    </ns:Carousel.itemTemplate>
+                </ns:Carousel>
+            </GridLayout>
+
+            <GridLayout columns="auto,auto,auto" horizontalAlignment="center" paddingBottom="10">
+                <Button class="fa fa-heart-o" col="0" text="LIKE" tap="profilePage"></Button>
+                <Button class="fa fa" col="2" text="PASS" tap="chatPage"></Button>
+                <!--<Button class="btn fa" col="2" text="'fa-heart-o' | fonticon"></Button>-->
+            </GridLayout>
+
+
+        </StackLayout>
+    </ScrollView>
+</Page>

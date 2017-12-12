@@ -1,0 +1,35 @@
+<!-- xml for profile -->
+<Page xmlns="http://www.nativescript.org/tns.xsd"
+    class="qsf-page"
+    loaded="pageLoaded"
+    navigatingTo="onNavigatingTo"
+    color="{{ tint }}"
+    backgroundColor="#f2f2f2"
+    backgroundSpanUnderStatusBar="true">
+    
+    <!-- added -->
+    <Page.actionBar>
+        <ActionBar title="Profile">
+            <NavigationButton android.systemIcon="ic_menu_back" text="Back to ActionBar" tap="backButtonClicked"></NavigationButton>
+            <ActionItem tap="profileEdit" ios.systemIcon="16" ios.position="right" text="Edit Profile" android.position="popup"></ActionItem>
+        </ActionBar>
+    </Page.actionBar>
+
+    <ScrollView>
+		<GridLayout class="content-background" id='profile'>
+			
+			<StackLayout class="marginated-content">
+				<Image id="profilePicture" class= "user-image" width="300px" height="300px"/>
+                <Label class = "text_design" id="name"></Label>
+				<TextView editable="true" id="profileDescription" class="info-text" />
+                <StackLayout>
+                    <Button id="saveDesc" text="Save description" tap="{{ saveDescription }}" class="info-link-button3" />
+                    <Button ios:text="Documentation" android:text="Add Item" class="info-link-button" tag="{{ url }}" tap="addItem" />
+                    <Button text="Gallery" tap="gallery" class="info-link-button2" />
+                    <Button text="Log Out" tap="tapLogout" class="info-link-button" />
+                </StackLayout>
+			</StackLayout>
+
+		</GridLayout>
+	</ScrollView>
+</Page>
