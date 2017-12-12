@@ -15,7 +15,6 @@ exports.loaded = function(args) {
     
 };
 
-//get users email while signing
 exports.signIn = function() {
     email = page.getViewById("email");
     console.log(email.text);
@@ -30,7 +29,6 @@ function backButtonClicked(args){
     goBack();
 }
 
-//function to navigate back in the app
 function goBack(){
     if (frameModule.topmost().canGoBack) {
         frameModule.topmost().goBack();

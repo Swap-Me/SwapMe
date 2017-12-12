@@ -62,7 +62,6 @@ exports.pageLoaded = function(args) {
         else {
             user.userDescription = "I am a RPI student about to graduate looking to trade items! :D";
         }
-        newDesc.tap = saveDescription();
         description.text= user.userDescription;
         name.text = userInformation.value.name
         picture.src = userInformation.value.profilePicture
